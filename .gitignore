@@ -4,3 +4,5 @@ build.xml
 nbproject/build-impl.xml
 *.properties
 nbproject/project.xml
+/build/
+/dist/

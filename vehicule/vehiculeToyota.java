@@ -2,6 +2,8 @@
  *
  * @author JUASP-G73-Android
  */
+package vehicule;
+
 public abstract class vehiculeToyota {
     /**************************************/
     /********* PRIVATE ATTRIBUTS **********/
