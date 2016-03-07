@@ -4,7 +4,7 @@
  */
 package vehicule;
 
-public abstract class vehiculeToyota {
+public abstract class VehiculeToyota {
     /**************************************/
     /********* PRIVATE ATTRIBUTS **********/
     /**************************************/	
@@ -27,7 +27,7 @@ public abstract class vehiculeToyota {
     /**************************************/
     /*************   METHODS  *************/
     /**************************************/    
-    public void informationsVehiculeToyot(){
+    public void informationsVehiculeToyota(){
 
         System.out.println(getNomModele() + " à une vitesseMax de " + getVitesseMax() + "km/h et à des pneus de " + getGrosseurPneus() + " pouces" );
 

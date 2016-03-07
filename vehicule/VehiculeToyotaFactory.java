@@ -14,16 +14,11 @@ public class VehiculeToyotaFactory {
     public VehiculeToyota fabriquerToyota(String typeToyota){
 		
 	switch (typeToyota.toUpperCase()) {
-            case "YARIS":  return new YarisToyota();
-                     break;
-            case "COROLLA":  return new CorollaToyota();
-                     break;
-            case "PRIUS":  return new PriusToyota();
-                     break;
-            case "PRIUSC":  return new YarisToyota();
-                     break;
-            default: return null;
-                     break;
+            case "YARIS":  return new YarisToyota();                    
+            case "COROLLA":  return new CorollaToyota();                     
+            case "PRIUS":  return new PriusToyota();                     
+            case "PRIUSC":  return new YarisToyota();                     
+            default: return null;                     
         }	
         
 		

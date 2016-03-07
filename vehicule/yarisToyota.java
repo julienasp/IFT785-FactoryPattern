@@ -4,8 +4,8 @@
  */
 package vehicule;
 
-public class yarisToyota extends vehiculeToyota {
-    public yarisToyota(){
+public class YarisToyota extends VehiculeToyota {
+    public YarisToyota(){
 	         
         setNomModele("Yaris");
         setVitesseMax(160);
