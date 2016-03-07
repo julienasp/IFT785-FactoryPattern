@@ -8,20 +8,31 @@ public abstract class VehiculeToyota {
     /**************************************/
     /********* PRIVATE ATTRIBUTS **********/
     /**************************************/	
-    private String nomModele;
-    private int vitesseMax;
-    private int grosseurPneus;
-	
+    protected String nomModele;
+    protected int vitesseMax;
+    protected int grosseurPneus;
+
+    /**************************************/
+    /************ CONSTRUCTORS *************/
+    /**************************************/    
+    public VehiculeToyota() {
+    }	
+    
+    public VehiculeToyota(String nomModele, int vitesseMax, int grosseurPneus) {
+        this.nomModele = nomModele;
+        this.vitesseMax = vitesseMax;
+        this.grosseurPneus = grosseurPneus;
+    }	
 	
     /**************************************/
     /********* GETTER AND SETTER **********/
     /**************************************/
     public String getNomModele() { return nomModele; }
-    public void setNomModele(String nomModele) { nomModele = nomModele; }
+    public void setNomModele(String newNomModele) { this.nomModele = newNomModele; }
     public int getVitesseMax() { return vitesseMax; }
-    public void setVitesseMax(int vitesseMax) { vitesseMax = vitesseMax; }
+    public void setVitesseMax(int newVitesseMax) { this.vitesseMax = newVitesseMax; }
     public int getGrosseurPneus() { return grosseurPneus; }
-    public void setGrosseurPneus(int grosseurPneus) { grosseurPneus = grosseurPneus; }
+    public void setGrosseurPneus(int newGrosseurPneus) { this.grosseurPneus = newGrosseurPneus; }
 	
 	
     /**************************************/

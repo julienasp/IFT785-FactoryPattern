@@ -19,7 +19,7 @@ public class ClientSolution {
 
         // Notre véhicule toyota		
         VehiculeToyota monToyota = null;
-
+        
         Scanner userInput = new Scanner(System.in);
 
         /*LA SEULE LIGNE QUI DEVAIT ÊTRE MODIFIÉ SUR LE CLIENT DANS LE CAS D'UN AJOUT. (REFLEXIVITÉ PEUT RÉSOUDRE CE PROBLÈME!)*/
@@ -29,10 +29,11 @@ public class ClientSolution {
 
         if (userInput.hasNextLine()){
 
-                String typeToyotaOption = userInput.nextLine();
+                String typeToyotaOption = userInput.nextLine().toUpperCase();
 
                 monToyota = toyotaFactory.fabriquerToyota(typeToyotaOption);
 
+                System.out.print(monToyota.toString());
                 if(monToyota != null){
 
                         presentation(monToyota);
