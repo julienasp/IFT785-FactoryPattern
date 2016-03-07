@@ -14,11 +14,11 @@ public class VehiculeToyotaFactory {
     public VehiculeToyota fabriquerToyota(String typeToyota){
 		
 	switch (typeToyota.toUpperCase()) {
-            case "YARIS":  System.out.print("Fabrique une Yaris"); return new YarisToyota();                    
-            case "COROLLA":  System.out.print("Fabrique une Corolla"); return new CorollaToyota();                     
-            case "PRIUS":  System.out.print("Fabrique une Prius"); return new PriusToyota();                     
-            case "PRIUSC":   System.out.print("Fabrique une Prius C"); return new YarisToyota();                     
-            default: System.out.print("Retourne un null");return null;                     
+            case "YARIS":  System.out.println("Fabrique une Yaris"); return new YarisToyota();                    
+            case "COROLLA":  System.out.println("Fabrique une Corolla"); return new CorollaToyota();                     
+            case "PRIUS":  System.out.println("Fabrique une Prius"); return new PriusToyota();                     
+            case "PRIUSC":   System.out.println("Fabrique une Prius C"); return new PriusCToyota();                     
+            default: System.out.println("Retourne un null");return null;                     
         }	
         
 		

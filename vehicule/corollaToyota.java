@@ -8,7 +8,7 @@ public class CorollaToyota extends VehiculeToyota {
     public CorollaToyota(){
         setNomModele("Corolla");
         setVitesseMax(220);
-        setGrosseurPneus(14);
+        setGrosseurPneus(15);
     }
 
 }

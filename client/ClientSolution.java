@@ -32,8 +32,7 @@ public class ClientSolution {
                 String typeToyotaOption = userInput.nextLine().toUpperCase();
 
                 monToyota = toyotaFactory.fabriquerToyota(typeToyotaOption);
-
-                System.out.print(monToyota.toString());
+                
                 if(monToyota != null){
 
                         presentation(monToyota);
