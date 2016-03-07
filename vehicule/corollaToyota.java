@@ -5,12 +5,10 @@
 package vehicule;
 
 public class CorollaToyota extends VehiculeToyota {
-    public CorollaToyota(){
-	         
+    public CorollaToyota(){	         
         setNomModele("Corolla");
         setVitesseMax(220);
         setGrosseurPneus(14);
-
     }
 
 }

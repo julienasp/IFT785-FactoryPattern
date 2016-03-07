@@ -5,12 +5,9 @@
 package vehicule;
 
 public class PriusCToyota extends PriusToyota {
-    public PriusCToyota(){
-	         
+    public PriusCToyota(){	         
         setNomModele("Prius type C");
         setVitesseMax(220);
         setGrosseurPneus(14);
-
     }
-
 }
