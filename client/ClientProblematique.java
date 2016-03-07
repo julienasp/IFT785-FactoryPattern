@@ -39,19 +39,22 @@ public class ClientProblematique {
 			typeToyotaOption = userInput.nextLine();
 			
             }
+            
             /************************************************************************************************/
             /*LE CODE CI-DESSOUS DEVRA ETRE MIS A JOUR SI UN NOUVEAU MODÈLE DE TOYOTA EST AJOUTÉ AU SYSTÈME*/
             /************************************************************************************************/
             switch (typeToyotaOption.toUpperCase()) {
-                case "YARIS":  unVehicule = new YarisToyota();                    
-                case "COROLLA":  unVehicule = new CorollaToyota();                     
-                case "PRIUS":  unVehicule = new PriusToyota();                     
-                case "PRIUSC":  unVehicule = new YarisToyota();                     
-                default: unVehicule = null;                     
+                case "YARIS":  unVehicule = new YarisToyota(); break;                   
+                case "COROLLA":  unVehicule = new CorollaToyota(); break;                     
+                case "PRIUS":  unVehicule = new PriusToyota(); break;                      
+                case "PRIUSC":  unVehicule = new PriusCToyota();  break;                   
+                default: unVehicule = null;   break;                   
             }
             /************************************************************************************************/
             /************************************************************************************************/
-            presentation(unVehicule);
+            if(unVehicule != null){
+                presentation(unVehicule);
+            } else System.out.print("Mauvaise saisie");
 	}
 	
 	// Executes methods of the super class
